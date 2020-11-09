@@ -101,7 +101,7 @@ const service = platform.getXYZService({
 });
 
 // create a provider for the custom user defined data
-const customSpaceProvider = new H.service.xyz.Provider(service, 'FpjZLL47');
+const customSpaceProvider = new H.service.xyz.Provider(service, 'dSVhD1DV');
 const customSpaceLayer = new H.map.layer.TileLayer(customSpaceProvider);
 
 var style2 = customSpaceProvider.getStyle();
