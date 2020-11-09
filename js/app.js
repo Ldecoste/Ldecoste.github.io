@@ -101,19 +101,33 @@ const service = platform.getXYZService({
 });
 
 // create a provider for the custom user defined data
-const customSpaceProvider = new H.service.xyz.Provider(service, 'dSVhD1DV');
+const customSpaceProvider = new H.service.xyz.Provider(service, 'DlbyhjKl');
 const customSpaceLayer = new H.map.layer.TileLayer(customSpaceProvider);
 
 var style2 = customSpaceProvider.getStyle();
 
 // change the color of the polygons
-style2.setProperty('layers.xyz.polygons.draw.polygons.color', '#9c2c65');
-style2.setProperty('layers.xyz.polygons.draw.lines.color', '#9c2c65');
+style2.setProperty('layers.xyz.polygons.draw.polygons.color', '#7DC462');
+style2.setProperty('layers.xyz.polygons.draw.lines.color', '#7DC462');
 //style2.setInteractive(['xyz'], true);
 // add a layer to the map
 map.addLayer(customSpaceLayer,1);
 // add a layer to the map
 
+
+// create a provider for the custom user defined data
+const customSpaceProvider2 = new H.service.xyz.Provider(service, 'fS4oqR5R');
+const customSpaceLayer2 = new H.map.layer.TileLayer(customSpaceProvider2);
+
+var style3 = customSpaceProvider2.getStyle();
+
+// change the color of the polygons
+style3.setProperty('layers.xyz.polygons.draw.polygons.color', '#9c2c65');
+style3.setProperty('layers.xyz.polygons.draw.lines.color', '#9c2c65');
+//style2.setInteractive(['xyz'], true);
+// add a layer to the map
+map.addLayer(customSpaceLayer2,1);
+// add a layer to the map
 
 const ui = H.ui.UI.createDefault(map, defaultLayers);
 
