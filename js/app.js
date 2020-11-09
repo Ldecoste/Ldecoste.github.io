@@ -94,10 +94,10 @@ const layer = reader.getLayer();
 
 map.addLayer(layer,2);
 
-/*
+
 // provided that the platform and the map are instantiated.
 const service = platform.getXYZService({
-  token: 'AFvIaCyrSYePr-NHQITJAwA',
+  token: 'AN23AyTASUmnoGjfJxHR3wA',
 });
 
 // create a provider for the custom user defined data
@@ -114,7 +114,7 @@ style2.setProperty('layers.xyz.polygons.draw.lines.color', '#9c2c65');
 map.addLayer(customSpaceLayer,1);
 // add a layer to the map
 
-*/
+
 const ui = H.ui.UI.createDefault(map, defaultLayers);
 
 layer.getProvider().addEventListener('tap', function(ev) {
