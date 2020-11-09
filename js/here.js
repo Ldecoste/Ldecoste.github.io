@@ -42,7 +42,7 @@ const requestGeocode = locationid => {
 }
 
 const autocompleteGeocodeUrl = (query) =>
-`https://autocomplete.geocoder.ls.hereapi.com/6.2/suggest.json?apiKey=p19vaMwNm7HO1pPswN27H7sf_lDri28yenJdPQzrnkk
+`https://autocomplete.geocoder.ls.hereapi.com/6.2/suggest.json?apiKey=w7h7_xpiEqpUOxqPKi2aaSP7ZPEcWObBp2m9fprdFRo
 &resultType=areas
 &query=${query}`
 
