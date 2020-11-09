@@ -80,7 +80,7 @@ let positionIcon = `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://
 let posIcon = new H.map.Icon(positionIcon);
 const marker = new H.map.Marker(center, {volatility: true , icon:posIcon});
 marker.draggable = true;
-map.addObject(marker);
+map.addObject(marker,3);
 
 // Create reader object initializing it with a document:
 var reader = new H.data.geojson.Reader('EarlyPollingHouston.json');
@@ -94,7 +94,7 @@ const layer = reader.getLayer();
 
 map.addLayer(layer,2);
 
-
+/*
 // provided that the platform and the map are instantiated.
 const service = platform.getXYZService({
   token: 'AN23AyTASUmnoGjfJxHR3wA',
@@ -113,7 +113,7 @@ style2.setProperty('layers.xyz.polygons.draw.lines.color', '#9c2c65');
 // add a layer to the map
 map.addLayer(customSpaceLayer,1);
 // add a layer to the map
-
+*/
 
 const ui = H.ui.UI.createDefault(map, defaultLayers);
 
