@@ -80,7 +80,7 @@ let positionIcon = `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://
 let posIcon = new H.map.Icon(positionIcon);
 const marker = new H.map.Marker(center, {volatility: true , icon:posIcon});
 marker.draggable = true;
-map.addObject(marker,3);
+map.addObject(marker);
 
 // Create reader object initializing it with a document:
 var reader = new H.data.geojson.Reader('EarlyPollingHouston.json');
